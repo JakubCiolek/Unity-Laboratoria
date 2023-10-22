@@ -15,7 +15,7 @@ E:/Unity-Laboratoria/My project
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-59884
+60297
 Successfully changed project path to: E:/Unity-Laboratoria/My project
 E:/Unity-Laboratoria/My project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ E:/Unity-Laboratoria/My project
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [20104] Host "[IP] 192.168.1.3 [Port] 0 [Flags] 2 [Guid] 3354423596 [EditorId] 3354423596 [Version] 1048832 [Id] WindowsEditor(7,MILOSZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [8572] Host "[IP] 192.168.1.3 [Port] 0 [Flags] 2 [Guid] 1448017522 [EditorId] 1448017522 [Version] 1048832 [Id] WindowsEditor(7,MILOSZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [20104] Host "[IP] 192.168.1.3 [Port] 0 [Flags] 2 [Guid] 3354423596 [EditorId] 3354423596 [Version] 1048832 [Id] WindowsEditor(7,MILOSZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8572] Host "[IP] 192.168.1.3 [Port] 0 [Flags] 2 [Guid] 1448017522 [EditorId] 1448017522 [Version] 1048832 [Id] WindowsEditor(7,MILOSZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 3 workers.
-Refreshing native plugins compatible for Editor in 12.30 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 12.91 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.11f1 (d00248457e15)
 [Subsystems] Discovering subsystems at path E:/Unity Editor/2022.3.11f1/Editor/Data/Resources/UnitySubsystems
@@ -70,100 +70,100 @@ Initialize mono
 Mono path[0] = 'E:/Unity Editor/2022.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'E:/Unity Editor/2022.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'E:/Unity Editor/2022.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56604
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56908
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/Unity Editor/2022.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008050 seconds.
-- Loaded All Assemblies, in  0.496 seconds
+Registered in 0.008905 seconds.
+- Loaded All Assemblies, in  0.623 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.380 seconds
-Domain Reload Profiling: 875ms
-	BeginReloadAssembly (153ms)
+- Finished resetting the current domain, in  0.794 seconds
+Domain Reload Profiling: 1416ms
+	BeginReloadAssembly (164ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (51ms)
+	RebuildCommonClasses (52ms)
 	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (77ms)
-	LoadAllAssembliesAndSetupDomain (197ms)
-		LoadAssemblies (152ms)
+	initialDomainReloadingComplete (79ms)
+	LoadAllAssembliesAndSetupDomain (309ms)
+		LoadAssemblies (163ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (195ms)
-			TypeCache.Refresh (193ms)
-				TypeCache.ScanAssembly (175ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (380ms)
+		AnalyzeDomain (306ms)
+			TypeCache.Refresh (302ms)
+				TypeCache.ScanAssembly (269ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (794ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (293ms)
+		SetupLoadedEditorAssemblies (657ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (10ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (20ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (192ms)
-			ProcessInitializeOnLoadMethodAttributes (78ms)
+			BeforeProcessingInitializeOnLoad (9ms)
+			ProcessInitializeOnLoadAttributes (462ms)
+			ProcessInitializeOnLoadMethodAttributes (151ms)
 			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (0ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.881 seconds
-Refreshing native plugins compatible for Editor in 3.52 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.485 seconds
+Refreshing native plugins compatible for Editor in 5.66 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.850 seconds
-Domain Reload Profiling: 1731ms
-	BeginReloadAssembly (219ms)
+- Finished resetting the current domain, in  1.371 seconds
+Domain Reload Profiling: 2853ms
+	BeginReloadAssembly (403ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (10ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (38ms)
-	RebuildCommonClasses (49ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (52ms)
-	LoadAllAssembliesAndSetupDomain (544ms)
-		LoadAssemblies (400ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (82ms)
+	RebuildNativeTypeToScriptingClass (35ms)
+	initialDomainReloadingComplete (116ms)
+	LoadAllAssembliesAndSetupDomain (846ms)
+		LoadAssemblies (635ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (270ms)
-			TypeCache.Refresh (240ms)
-				TypeCache.ScanAssembly (220ms)
-			ScanForSourceGeneratedMonoScriptInfo (21ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (850ms)
+		AnalyzeDomain (437ms)
+			TypeCache.Refresh (390ms)
+				TypeCache.ScanAssembly (361ms)
+			ScanForSourceGeneratedMonoScriptInfo (34ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1372ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (605ms)
+		SetupLoadedEditorAssemblies (965ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (11ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (78ms)
-			ProcessInitializeOnLoadAttributes (474ms)
-			ProcessInitializeOnLoadMethodAttributes (35ms)
+			BeforeProcessingInitializeOnLoad (116ms)
+			ProcessInitializeOnLoadAttributes (753ms)
+			ProcessInitializeOnLoadMethodAttributes (60ms)
 			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (24ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 3.59 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (25ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
+Refreshing native plugins compatible for Editor in 3.02 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3132 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 32 unused Assets / (57.1 KB). Loaded Objects now: 3596.
-Memory consumption went from 126.8 MB to 126.8 MB.
-Total: 3.861100 ms (FindLiveObjects: 0.352600 ms CreateObjectMapping: 0.647500 ms MarkObjects: 2.637600 ms  DeleteObjects: 0.222200 ms)
+Unloading 32 unused Assets / (57.0 KB). Loaded Objects now: 3596.
+Memory consumption went from 126.9 MB to 126.9 MB.
+Total: 4.076600 ms (FindLiveObjects: 0.250900 ms CreateObjectMapping: 0.248300 ms MarkObjects: 3.459300 ms  DeleteObjects: 0.116600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -180,414 +180,220 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 110147.027842 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1af5ef9fef838fa1976aaef9c21b62db') in 0.003795 seconds
+  Time since last request: 110616.116251 seconds.
+  path: Assets/Studio Horizon/Simple Building Generic Free
+  artifactKey: Guid(900f79fe9f84a6f4eb827e15dceb5a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Studio Horizon/Simple Building Generic Free using Guid(900f79fe9f84a6f4eb827e15dceb5a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13bb4c04e44bd15967d1a969a3032485') in 0.003184 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 61.269756 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_AllCards_00.prefab
-  artifactKey: Guid(1f527e57169eb50438f38e1405737620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_AllCards_00.prefab using Guid(1f527e57169eb50438f38e1405737620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '230670fd4aaf1c7e84c32fede2782c4f') in 0.646864 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 715
-========================================================================
-Received Import Request.
   Time since last request: 0.000029 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Heart07_00.prefab
-  artifactKey: Guid(c0a5d114cb6285f43b003bb5d8d95487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Heart07_00.prefab using Guid(c0a5d114cb6285f43b003bb5d8d95487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6c233227315fee8920761e63d462b13') in 0.007563 seconds
+  path: Packages/com.unity.editorcoroutines/package.json
+  artifactKey: Guid(6428ca6f30e71ee4dbea7e1d0787cb07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.editorcoroutines/package.json using Guid(6428ca6f30e71ee4dbea7e1d0787cb07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bd67d7a7ae6739df3ffd26c8a7e7974') in 0.013583 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Joker_00.prefab
-  artifactKey: Guid(86f5be653215f1c44bce484f91c79ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Joker_00.prefab using Guid(86f5be653215f1c44bce484f91c79ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e733f42fab6085a481540b88a770e78') in 0.006218 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_Spread_00.prefab
-  artifactKey: Guid(072008be8c709e945bc60bda3cdc6f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_Spread_00.prefab using Guid(072008be8c709e945bc60bda3cdc6f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c73548573a4f188c62f0e1bebf588646') in 0.015894 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Club04_00.prefab
-  artifactKey: Guid(ff26e91d329993c4a9d197dbd4f21d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Club04_00.prefab using Guid(ff26e91d329993c4a9d197dbd4f21d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bdb828eeee4e435bd3928837d54c68c') in 0.012358 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Diamond09_00.prefab
-  artifactKey: Guid(419a338db6c35b840b4e2e0f6db80291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Diamond09_00.prefab using Guid(419a338db6c35b840b4e2e0f6db80291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '086585778b82393856242084b73a9994') in 0.008004 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Heart09_00.prefab
-  artifactKey: Guid(42ca9df923c7adc418eb2e62b8422389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Heart09_00.prefab using Guid(42ca9df923c7adc418eb2e62b8422389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60e0cee2ae153b5855d397d5b04472c2') in 0.007145 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000018 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Diamond05_00.prefab
-  artifactKey: Guid(e4e6b9e25c5823640abf889c4d74db76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Diamond05_00.prefab using Guid(e4e6b9e25c5823640abf889c4d74db76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd17620f4efc5f35cef0fd6d64874ad64') in 0.008988 seconds
+  path: Packages/com.unity.settings-manager/package.json
+  artifactKey: Guid(3001f7491ac66e34a9694543d9f8b1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.settings-manager/package.json using Guid(3001f7491ac66e34a9694543d9f8b1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec04e17e4cc5ededd5fe9efff040daa0') in 0.001113 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
+Number of asset objects unloaded after import = 1
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Diamond07_00.prefab
-  artifactKey: Guid(f08b8f0e108d7e849aa4f0ee9711475e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Diamond07_00.prefab using Guid(f08b8f0e108d7e849aa4f0ee9711475e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3a4f2a942dc9c1697edecbac3f11662') in 0.009546 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.430 seconds
+Refreshing native plugins compatible for Editor in 2.53 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.191 seconds
+Domain Reload Profiling: 1621ms
+	BeginReloadAssembly (163ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (192ms)
+		LoadAssemblies (271ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1192ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (661ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (102ms)
+			ProcessInitializeOnLoadAttributes (487ms)
+			ProcessInitializeOnLoadMethodAttributes (53ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (22ms)
+Refreshing native plugins compatible for Editor in 4.38 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3110 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (31.0 KB). Loaded Objects now: 3600.
+Memory consumption went from 124.1 MB to 124.1 MB.
+Total: 5.736000 ms (FindLiveObjects: 0.653900 ms CreateObjectMapping: 0.300400 ms MarkObjects: 4.728800 ms  DeleteObjects: 0.051600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Spade12_00.prefab
-  artifactKey: Guid(091c8ef8838faba4b9cdbfacfd334e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Spade12_00.prefab using Guid(091c8ef8838faba4b9cdbfacfd334e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae529cfe3709d9f7af44dabb8d97c683') in 0.007874 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.447 seconds
+Refreshing native plugins compatible for Editor in 2.25 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.384 seconds
+Domain Reload Profiling: 1832ms
+	BeginReloadAssembly (160ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (204ms)
+		LoadAssemblies (283ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (1386ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (671ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (94ms)
+			ProcessInitializeOnLoadAttributes (510ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (24ms)
+Refreshing native plugins compatible for Editor in 5.13 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3111 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (31.0 KB). Loaded Objects now: 3603.
+Memory consumption went from 126.3 MB to 126.3 MB.
+Total: 3.733200 ms (FindLiveObjects: 0.292100 ms CreateObjectMapping: 0.576800 ms MarkObjects: 2.806800 ms  DeleteObjects: 0.056300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Spade07_00.prefab
-  artifactKey: Guid(90b9cbbb587544247b843c1e997ff060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Spade07_00.prefab using Guid(90b9cbbb587544247b843c1e997ff060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5548d58a5b42e74751b337af4867fe8f') in 0.006772 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Heart11_00.prefab
-  artifactKey: Guid(4b7b96de18487b0428cdfe7a82b63bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Heart11_00.prefab using Guid(4b7b96de18487b0428cdfe7a82b63bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b54e698579e21ee584bdde353cdf121d') in 0.006987 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Club03_00.prefab
-  artifactKey: Guid(0c9f83dbd793c6a48a7556f2d55f8bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Club03_00.prefab using Guid(0c9f83dbd793c6a48a7556f2d55f8bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af2e1843d8959360292ffa89c58c3e72') in 0.006553 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.004818 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_LittleDeck_00.prefab
-  artifactKey: Guid(96a1242c4b2cecc48b675881bae31930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_LittleDeck_00.prefab using Guid(96a1242c4b2cecc48b675881bae31930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c730bb3849b015075f21c9eb65c9f958') in 0.058308 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Club05_00.prefab
-  artifactKey: Guid(9d79033ce0ee51e42a6c58859a34d1bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Club05_00.prefab using Guid(9d79033ce0ee51e42a6c58859a34d1bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42b713b594ecbbfea956755fa9f9f5dd') in 0.007453 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Studio Horizon/Simple Building Generic Free/FBX/Hospital.fbx
-  artifactKey: Guid(bf248c063a81ab249aac3d6df14c5c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Studio Horizon/Simple Building Generic Free/FBX/Hospital.fbx using Guid(bf248c063a81ab249aac3d6df14c5c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c90d35c186aa0381577cb93e60dd0e0c') in 0.647703 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Studio Horizon/Simple Building Generic Free/FBX/Police_Station.fbx
-  artifactKey: Guid(861e24a43738d2a4f884869d84521790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Studio Horizon/Simple Building Generic Free/FBX/Police_Station.fbx using Guid(861e24a43738d2a4f884869d84521790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78590868af7f9ca3cc309baadac7d214') in 0.055158 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000407 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Heart06_00.prefab
-  artifactKey: Guid(678ad90abddb61244a376d80176fd222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Heart06_00.prefab using Guid(678ad90abddb61244a376d80176fd222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e06a57d6857bbcc8137250473c269bb1') in 0.008535 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Heart04_00.prefab
-  artifactKey: Guid(1e6cedcc0d700f6428dd3b4b2028a3d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Heart04_00.prefab using Guid(1e6cedcc0d700f6428dd3b4b2028a3d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70bd53b26f9d88cec3583936a6fa1e4c') in 0.008480 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Spade03_00.prefab
-  artifactKey: Guid(6e04802004627984c9f8a45567c831d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Spade03_00.prefab using Guid(6e04802004627984c9f8a45567c831d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d3423a7d3dbe1b8131279ed72484797') in 0.014470 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Club06_00.prefab
-  artifactKey: Guid(3ebc3c32e60c5f84b942bdfeded6669d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Club06_00.prefab using Guid(3ebc3c32e60c5f84b942bdfeded6669d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92d88389143fc48a41e0c056d250bdb4') in 0.007134 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Diamond02_00.prefab
-  artifactKey: Guid(c3cafea9e8f7f304f963bc80154e200a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Diamond02_00.prefab using Guid(c3cafea9e8f7f304f963bc80154e200a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2c23df371332894e1bc9d99d36a2256') in 0.008661 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_ManyDeck_00.prefab
-  artifactKey: Guid(3a44067c0ee743248a1cac0132a41d0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_ManyDeck_00.prefab using Guid(3a44067c0ee743248a1cac0132a41d0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5520f013660455c39ccc70621f22a6a') in 0.007484 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_ManyDeck_00.prefab
-  artifactKey: Guid(cbb2006a6ea0dac479a09747aaa29f20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_ManyDeck_00.prefab using Guid(cbb2006a6ea0dac479a09747aaa29f20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e488c7b4e32411d8311be0a25b0357ac') in 0.007200 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Club05_00.prefab
-  artifactKey: Guid(d8ec169ce3d59824ebf20eacc9dd05ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Club05_00.prefab using Guid(d8ec169ce3d59824ebf20eacc9dd05ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa69f087c241fbf79e6ffceb5a8002f0') in 0.005413 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_LittleDiscard_00.prefab
-  artifactKey: Guid(546873e5032c4514cadf753d24871305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_LittleDiscard_00.prefab using Guid(546873e5032c4514cadf753d24871305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99a1204b051875a13fcd6d2e150b842a') in 0.025257 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Blank_00.mat
-  artifactKey: Guid(0564b59d18c1a7a4ba76074a51ca276c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Blank_00.mat using Guid(0564b59d18c1a7a4ba76074a51ca276c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed2cdbc890d85200c7aa8be24373352f') in 0.006557 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Logo.mat
-  artifactKey: Guid(f4e195ac1e204eff960149d1cb34e18c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Logo.mat using Guid(f4e195ac1e204eff960149d1cb34e18c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3391a71969649ac731513f5d337fe59') in 0.535341 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Diamond12_00.mat
-  artifactKey: Guid(e9fa4112b248aea46a690de3d836239e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Diamond12_00.mat using Guid(e9fa4112b248aea46a690de3d836239e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd45f059722a6d642f4add7716dfdcc51') in 0.006428 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Club01_00.prefab
-  artifactKey: Guid(1d1cc56097e553a46b1249f2c8bc83cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Club01_00.prefab using Guid(1d1cc56097e553a46b1249f2c8bc83cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94f15f73b66891277f2434a1cd4b6429') in 0.006827 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Diamond01_00.prefab
-  artifactKey: Guid(3719909202138ab43b42e38264bbda81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Diamond01_00.prefab using Guid(3719909202138ab43b42e38264bbda81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77b25d61efd1e0ee8cc75dea36c31c81') in 0.008431 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Club04_00.mat
-  artifactKey: Guid(a404ac05a37aa39428f25895c04ba2a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Club04_00.mat using Guid(a404ac05a37aa39428f25895c04ba2a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09d43f46b48e24d56e7518cd5fffae1d') in 0.008126 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_ManyDiscard_00.prefab
-  artifactKey: Guid(fd89f85809a0f2f45a801aab04cc064d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_ManyDiscard_00.prefab using Guid(fd89f85809a0f2f45a801aab04cc064d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58987c1a2d56c6db17d40ff4d8c0b167') in 0.021586 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Playing Cards/Resource/Model/Tower_00.fbx
-  artifactKey: Guid(55a0682385c27a748b41dba2af534c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Model/Tower_00.fbx using Guid(55a0682385c27a748b41dba2af534c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a86389f4fba832ed7c3c3fda7a4323f7') in 0.039492 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 18
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Spade10_00.mat
-  artifactKey: Guid(4ab20250de733e842b9f85ebd2bdc1f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Spade10_00.mat using Guid(4ab20250de733e842b9f85ebd2bdc1f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aa61b06f6377eeb95132a2faadbf282') in 0.006495 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Spade13_00.mat
-  artifactKey: Guid(2ca0fe2bbbfb6c045a1e2569cbcf63d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Spade13_00.mat using Guid(2ca0fe2bbbfb6c045a1e2569cbcf63d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55dc6cd74bd8e2cb36b876e0e4ac1539') in 0.022077 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Diamond11_00.mat
-  artifactKey: Guid(d5c7ae834f250294ab40d7ddcbd247d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Diamond11_00.mat using Guid(d5c7ae834f250294ab40d7ddcbd247d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5b9c0fd0227838e77c332dfecf9a20d') in 0.008825 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_LineUp_HeartDiamond_00.mat
-  artifactKey: Guid(90c60434babfa39438251d40c1bf7fa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_LineUp_HeartDiamond_00.mat using Guid(90c60434babfa39438251d40c1bf7fa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '880b443425d7865de8087c85f28490e0') in 0.008115 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Club03_00.mat
-  artifactKey: Guid(3759337a4461d474e8256e017ae8143a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Club03_00.mat using Guid(3759337a4461d474e8256e017ae8143a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87b3c0d7c05a62bac895289f24d2b24b') in 0.007935 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Playing Cards/Resource/Materials/BackColor_Blue/Blue_LineUp_HeartDiamond_00.mat
-  artifactKey: Guid(53998d35753711e48ab9744e11b5c613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Materials/BackColor_Blue/Blue_LineUp_HeartDiamond_00.mat using Guid(53998d35753711e48ab9744e11b5c613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8f049c5fc8f68ac890b5276cbe6d5b2') in 0.007010 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Club12_00.mat
-  artifactKey: Guid(8ceec665a0152344fbae9b936dffd5fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Club12_00.mat using Guid(8ceec665a0152344fbae9b936dffd5fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7276400717334c9974c3dd4e0ed1b0f6') in 0.008117 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Spade02_00.mat
-  artifactKey: Guid(da1270d357791f8408a804a5d0c8b26d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Spade02_00.mat using Guid(da1270d357791f8408a804a5d0c8b26d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9b795f32c8616b2940cf80d263b93a2') in 0.006948 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Diamond09_00.mat
-  artifactKey: Guid(74fc17f0bc57c1b4ca8498c6bce85963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Diamond09_00.mat using Guid(74fc17f0bc57c1b4ca8498c6bce85963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac84fbcad2574f3336d0ff94ed432a07') in 0.031063 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Spade03_00.mat
-  artifactKey: Guid(37095d7f72545c145a98a27e3da4e429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Spade03_00.mat using Guid(37095d7f72545c145a98a27e3da4e429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e11827bfd84d2507152e2d2e50d4f361') in 0.008484 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Drop Shadow.mat
-  artifactKey: Guid(f2dcf029949142e28b974630369c8b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Drop Shadow.mat using Guid(f2dcf029949142e28b974630369c8b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5522bce034601f1df1a30fe11b38852a') in 0.019795 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Diamond03_00.mat
-  artifactKey: Guid(8a14ae153bd5d0f44ac08debcc780482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Diamond03_00.mat using Guid(8a14ae153bd5d0f44ac08debcc780482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a6bc1ea570dbc10575d84b9ccaf907b') in 0.008601 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Club02_00.prefab
-  artifactKey: Guid(6c9b2965e4120f541b883fbb75e502f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Club02_00.prefab using Guid(6c9b2965e4120f541b883fbb75e502f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd20e0566def20218687eeb4c9c2950fc') in 0.026528 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Diamond05_00.mat
-  artifactKey: Guid(cc24a1ab16f26484b8d8d187dcc9cfd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_PlayingCards_Diamond05_00.mat using Guid(cc24a1ab16f26484b8d8d187dcc9cfd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24b057c82e6afe34d1903fd30949727e') in 0.008694 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_Deck_00.mat
-  artifactKey: Guid(37feecd5a3d9e1349bf671d6321026a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Playing Cards/Resource/Materials/BackColor_Black/Black_Deck_00.mat using Guid(37feecd5a3d9e1349bf671d6321026a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48832d827982ed3862a832c88c434ac0') in 0.009212 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Studio Horizon/Simple Building Generic Free/FBX/School.fbx
-  artifactKey: Guid(c8ba5207d6411c14f84508e023da9e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Studio Horizon/Simple Building Generic Free/FBX/School.fbx using Guid(c8ba5207d6411c14f84508e023da9e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '210518a5cb76eb8c5711099d7f0e71ea') in 0.115847 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: Operacja We/Wy zosta³a przerwana z powodu zakoñczenia w¹tku lub ¿¹dania aplikacji.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.424 seconds
+Refreshing native plugins compatible for Editor in 2.44 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.374 seconds
+Domain Reload Profiling: 1798ms
+	BeginReloadAssembly (160ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (188ms)
+		LoadAssemblies (265ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1375ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (670ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (86ms)
+			ProcessInitializeOnLoadAttributes (521ms)
+			ProcessInitializeOnLoadMethodAttributes (40ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (27ms)
+Refreshing native plugins compatible for Editor in 3.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3111 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (31.1 KB). Loaded Objects now: 3606.
+Memory consumption went from 128.2 MB to 128.2 MB.
+Total: 16.088000 ms (FindLiveObjects: 1.856500 ms CreateObjectMapping: 1.654000 ms MarkObjects: 12.518500 ms  DeleteObjects: 0.057500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

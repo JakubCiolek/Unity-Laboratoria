@@ -16,7 +16,12 @@ public class Cards : MonoBehaviour
     public Button Card4;
 
     public bool CardChoosen = false;
-    public Sprite CardChoosenName;
+
+    public string cardPick;
+    public string card1;
+    public string card2;
+    public string card3;
+    public string card4;
 
     int Counter = 0;
 
@@ -24,10 +29,10 @@ public class Cards : MonoBehaviour
         if(Counter < 4){
             System.Random rnd = new System.Random();
 
-            string card1 = cardsList[rnd.Next(cardsList.Length)];
-            string card2 = cardsList[rnd.Next(cardsList.Length)];
-            string card3 = cardsList[rnd.Next(cardsList.Length)];
-            string card4 = cardsList[rnd.Next(cardsList.Length)];
+            card1 = cardsList[rnd.Next(cardsList.Length)];
+            card2 = cardsList[rnd.Next(cardsList.Length)];
+            card3 = cardsList[rnd.Next(cardsList.Length)];
+            card4 = cardsList[rnd.Next(cardsList.Length)];
 
             Card1.GetComponent<Image>().sprite = Resources.Load<Sprite>(card1);
             Card2.GetComponent<Image>().sprite = Resources.Load<Sprite>(card2);
@@ -39,6 +44,7 @@ public class Cards : MonoBehaviour
             Card3.gameObject.SetActive(true);
             Card4.gameObject.SetActive(true);
             CardChoosen = false;
+            cardPick = "";
             Counter++;
         }
     }
@@ -52,22 +58,26 @@ public class Cards : MonoBehaviour
         switch(i){
         case 1:
             Card1.gameObject.SetActive(true);
-            CardChoosenName = Card1.GetComponent<Image>().sprite;
+                //CardChoosenName = Card1.GetComponent<Image>().sprite;
+                cardPick = card1;
             CardChoosen = true;
             break;
         case 2:
             Card2.gameObject.SetActive(true);
-            CardChoosenName = Card2.GetComponent<Image>().sprite;
+                //CardChoosenName = Card2.GetComponent<Image>().sprite;
+                cardPick = card2;
             CardChoosen = true;
             break;
         case 3:
             Card3.gameObject.SetActive(true);
-            CardChoosenName = Card3.GetComponent<Image>().sprite;
+                //CardChoosenName = Card3.GetComponent<Image>().sprite;
+                cardPick = card3;
             CardChoosen = true;
             break;
         case 4:
             Card4.gameObject.SetActive(true);
-            CardChoosenName = Card4.GetComponent<Image>().sprite;
+                //CardChoosenName = Card4.GetComponent<Image>().sprite;
+                cardPick = card4;
             CardChoosen = true;
             break;
         default:
