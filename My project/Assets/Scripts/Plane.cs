@@ -57,7 +57,8 @@ public class Plane : MonoBehaviour
             meshRenderer.material = Resources.Load<Material>("CardTextures/Blue_PlayingCards_" + card + "_00");
             //Instantiate(cubePrefab, cubePosition, Quaternion.identity);
             occupied = true;
-            Cards.GetComponent<Cards>().RandomCards();
+            Cards.GetComponent<Cards>().CardPlaced(1);
+
             //this.GetComponent<SpriteRenderer>().sprite = Cards.GetComponent<Cards>().CardChoosenName;
             
         }

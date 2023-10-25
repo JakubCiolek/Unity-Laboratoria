@@ -1,23 +1,23 @@
 Using pre-set license
-Built from '2021.3/staging' branch; Version is '2021.3.10f1 (1c7d0df0160b) revision 1867021'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit Education' Language: 'pl' Physical Memory: 32693 MB
+Built from '2022.3/staging' branch; Version is '2022.3.11f1 (d00248457e15) revision 13632072'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'pl' Physical Memory: 16343 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2021.3.10f1\Editor\Unity.exe
+E:\Unity Editor\2022.3.11f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker5
 -projectPath
-C:/Users/student/Desktop/Unity-Laboratoria-main/My project
+E:/Unity-Laboratoria/My project
 -logFile
 Logs/AssetImportWorker5.log
 -srvPort
-52669
-Successfully changed project path to: C:/Users/student/Desktop/Unity-Laboratoria-main/My project
-C:/Users/student/Desktop/Unity-Laboratoria-main/My project
+50331
+Successfully changed project path to: E:/Unity-Laboratoria/My project
+E:/Unity-Laboratoria/My project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -39,6 +39,8 @@ C:/Users/student/Desktop/Unity-Laboratoria-main/My project
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
     "memorysetup-temp-allocator-size-background-worker=32768"
     "memorysetup-temp-allocator-size-job-worker=262144"
     "memorysetup-temp-allocator-size-preload-manager=33554432"
@@ -47,450 +49,137 @@ C:/Users/student/Desktop/Unity-Laboratoria-main/My project
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 104.63 ms, found 3 plugins.
+Player connection [11564] Host "[IP] 192.168.1.3 [Port] 0 [Flags] 2 [Guid] 562230432 [EditorId] 562230432 [Version] 1048832 [Id] WindowsEditor(7,MILOSZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [11564] Host "[IP] 192.168.1.3 [Port] 0 [Flags] 2 [Guid] 562230432 [EditorId] 562230432 [Version] 1048832 [Id] WindowsEditor(7,MILOSZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 3 workers.
+Refreshing native plugins compatible for Editor in 31.36 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2021.3.10f1 (1c7d0df0160b)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/student/Desktop/Unity-Laboratoria-main/My project/Assets
+Initialize engine version: 2022.3.11f1 (d00248457e15)
+[Subsystems] Discovering subsystems at path E:/Unity Editor/2022.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Unity-Laboratoria/My project/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
+    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c03)
     Vendor:   NVIDIA
-    VRAM:     8081 MB
+    VRAM:     6043 MB
     Driver:   31.0.15.3623
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56280
+Mono path[0] = 'E:/Unity Editor/2022.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'E:/Unity Editor/2022.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'E:/Unity Editor/2022.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56808
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008304 seconds.
+Register platform support module: E:/Unity Editor/2022.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.012505 seconds.
+- Loaded All Assemblies, in  1.042 seconds
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 86.03 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.701 seconds
-Domain Reload Profiling:
-	ReloadAssembly (702ms)
-		BeginReloadAssembly (73ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (0ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (508ms)
-			LoadAssemblies (71ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (113ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (312ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (86ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (164ms)
-				ProcessInitializeOnLoadMethodAttributes (52ms)
-				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (0ms)
-Platform modules already initialized, skipping
-Registering precompiled user dll's ...
-Registered in 0.005158 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.105 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1105ms)
-		BeginReloadAssembly (123ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (851ms)
-			LoadAssemblies (82ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (277ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (50ms)
-			SetupLoadedEditorAssemblies (405ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (82ms)
-				ProcessInitializeOnLoadAttributes (285ms)
-				ProcessInitializeOnLoadMethodAttributes (19ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
+- Finished resetting the current domain, in  0.375 seconds
+Domain Reload Profiling: 1418ms
+	BeginReloadAssembly (139ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (35ms)
+	initialDomainReloadingComplete (168ms)
+	LoadAllAssembliesAndSetupDomain (656ms)
+		LoadAssemblies (141ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (649ms)
+			TypeCache.Refresh (646ms)
+				TypeCache.ScanAssembly (611ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (375ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (248ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (145ms)
+			ProcessInitializeOnLoadMethodAttributes (82ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3098 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (56.5 KB). Loaded Objects now: 3563.
-Memory consumption went from 112.9 MB to 112.8 MB.
-Total: 2.718800 ms (FindLiveObjects: 0.261000 ms CreateObjectMapping: 0.200200 ms MarkObjects: 2.172500 ms  DeleteObjects: 0.084500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005554 seconds.
 Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.927 seconds
+Refreshing native plugins compatible for Editor in 2.50 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  1.353 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1353ms)
-		BeginReloadAssembly (158ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (43ms)
-		EndReloadAssembly (1083ms)
-			LoadAssemblies (90ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (366ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (64ms)
-			SetupLoadedEditorAssemblies (499ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (26ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (85ms)
-				ProcessInitializeOnLoadAttributes (353ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.84 ms, found 3 plugins.
+- Finished resetting the current domain, in  0.757 seconds
+Domain Reload Profiling: 1683ms
+	BeginReloadAssembly (247ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (54ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (75ms)
+	LoadAllAssembliesAndSetupDomain (531ms)
+		LoadAssemblies (460ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (219ms)
+			TypeCache.Refresh (196ms)
+				TypeCache.ScanAssembly (180ms)
+			ScanForSourceGeneratedMonoScriptInfo (17ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (757ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (539ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (83ms)
+			ProcessInitializeOnLoadAttributes (403ms)
+			ProcessInitializeOnLoadMethodAttributes (37ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (50ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 3.21 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3077 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 15 unused Assets / (24.6 KB). Loaded Objects now: 3566.
-Memory consumption went from 111.2 MB to 111.1 MB.
-Total: 3.080200 ms (FindLiveObjects: 0.254800 ms CreateObjectMapping: 0.341100 ms MarkObjects: 2.447500 ms  DeleteObjects: 0.035400 ms)
+Unloading 3176 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (57.3 KB). Loaded Objects now: 3640.
+Memory consumption went from 128.4 MB to 128.3 MB.
+Total: 4.165800 ms (FindLiveObjects: 0.435200 ms CreateObjectMapping: 0.568600 ms MarkObjects: 2.992800 ms  DeleteObjects: 0.168200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004703 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.224 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1225ms)
-		BeginReloadAssembly (141ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (985ms)
-			LoadAssemblies (89ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (331ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (57ms)
-			SetupLoadedEditorAssemblies (444ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (22ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (82ms)
-				ProcessInitializeOnLoadAttributes (302ms)
-				ProcessInitializeOnLoadMethodAttributes (22ms)
-				AfterProcessingInitializeOnLoad (14ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.32 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3077 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 15 unused Assets / (24.7 KB). Loaded Objects now: 3569.
-Memory consumption went from 111.2 MB to 111.1 MB.
-Total: 4.571500 ms (FindLiveObjects: 0.432300 ms CreateObjectMapping: 0.336800 ms MarkObjects: 3.763000 ms  DeleteObjects: 0.037900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 16628.250300 seconds.
-  path: Assets/Resources/CardTextures/Blue_LineUp_HeartDiamond_00.mat
-  artifactKey: Guid(1f78b2f915c97984a89427158b38cb30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_LineUp_HeartDiamond_00.mat using Guid(1f78b2f915c97984a89427158b38cb30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f8e437d6601115e1749996298f2592d') in 0.209588 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Club02_00.mat
-  artifactKey: Guid(d79f8f88b73c46e4c8ef14bf1dd8e249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Club02_00.mat using Guid(d79f8f88b73c46e4c8ef14bf1dd8e249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c4598c71d75f1ccafc5565522c6461a') in 0.010981 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Club12_00.mat
-  artifactKey: Guid(1dad0878f933cf14c97f944f6f6fa29e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Club12_00.mat using Guid(1dad0878f933cf14c97f944f6f6fa29e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7094ceaebbf60a57095ed190258bb080') in 0.012211 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Club07_00.mat
-  artifactKey: Guid(0946c8bf01f78c34bb47e970f1f7fcba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Club07_00.mat using Guid(0946c8bf01f78c34bb47e970f1f7fcba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cef6bb3aba5994ccbf8fac405148e289') in 0.012641 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Joker_00.mat
-  artifactKey: Guid(5b095ea72fec3714d8eefaec25ce77dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Joker_00.mat using Guid(5b095ea72fec3714d8eefaec25ce77dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41de9b11e0399e8ebb3e178eb662e6d3') in 0.009886 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Resources/CardTextures/Blue_RifleShuffle_Second_00.mat
-  artifactKey: Guid(c79a2d49db1844e48845f78a165b16ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_RifleShuffle_Second_00.mat using Guid(c79a2d49db1844e48845f78a165b16ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '303b78532895509005bf693376d3ea77') in 0.368260 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Blank_00.mat
-  artifactKey: Guid(db53f7e20cccd6d4cb1ba7a1168642df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Blank_00.mat using Guid(db53f7e20cccd6d4cb1ba7a1168642df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97a5753cdb26c245611c0a557d25fd98') in 0.011116 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Diamond05_00.mat
-  artifactKey: Guid(3f5dda592f9e614499052e4bd4d6d58b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Diamond05_00.mat using Guid(3f5dda592f9e614499052e4bd4d6d58b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71b1a51f5fd859290ab2b8e423534c19') in 0.011503 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Club04_00.mat
-  artifactKey: Guid(5b7dace84d8b171489bdd0e26c609a34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Club04_00.mat using Guid(5b7dace84d8b171489bdd0e26c609a34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1b7d32fe08bc80a4a22143e64b8ba3b') in 0.011528 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Heart02_00.mat
-  artifactKey: Guid(8326967d69069d04ebe0979e8308b706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Heart02_00.mat using Guid(8326967d69069d04ebe0979e8308b706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '422764693e791f55f92a20e9204ffa2d') in 0.011062 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Heart09_00.mat
-  artifactKey: Guid(009b19ae3e5bdba4f8e278a6b0ed3a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Heart09_00.mat using Guid(009b19ae3e5bdba4f8e278a6b0ed3a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '139cecec310da777434055513a1526f7') in 0.010742 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Club05_00.mat
-  artifactKey: Guid(ca6a124eee9995841a3965523364f7ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Club05_00.mat using Guid(ca6a124eee9995841a3965523364f7ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4405bcad704fbd67065f0b73f8f63a4') in 0.012810 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Diamond03_00.mat
-  artifactKey: Guid(4d5101640e7d73d42b55398b4229a9a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Diamond03_00.mat using Guid(4d5101640e7d73d42b55398b4229a9a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19cb05cc362aedf7a6a14a05af56e546') in 0.011402 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Heart03_00.mat
-  artifactKey: Guid(0eb7ed16a026dac4da24ea7917785c06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Heart03_00.mat using Guid(0eb7ed16a026dac4da24ea7917785c06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b04edfd1f96f00e361bd3f693fc1ac42') in 0.012008 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Heart04_00.mat
-  artifactKey: Guid(f79224b01f77a224787278e4af843470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Heart04_00.mat using Guid(f79224b01f77a224787278e4af843470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c926143ded5830582450ed083224a6b4') in 0.011198 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Spade04_00.mat
-  artifactKey: Guid(e70f9f5ca9901a74da8930723259ede2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Spade04_00.mat using Guid(e70f9f5ca9901a74da8930723259ede2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fb77afd2df3f0e1a75f88d56f9e89dc') in 0.011189 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Diamond09_00.mat
-  artifactKey: Guid(faa3f0c64be0c4c47a17c30ef75a9547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Diamond09_00.mat using Guid(faa3f0c64be0c4c47a17c30ef75a9547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51af52a1bd0ec716e5cf753c8cec376f') in 0.010168 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Heart13_00.mat
-  artifactKey: Guid(cb0651c993117a2498100c597315c771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Heart13_00.mat using Guid(cb0651c993117a2498100c597315c771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41dcf26d7d74db29389e02909f358557') in 0.011591 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Diamond10_00.mat
-  artifactKey: Guid(f20e464168926f24cac6fa571f458a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Diamond10_00.mat using Guid(f20e464168926f24cac6fa571f458a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ba4fb4ff10a9f8cea1496c8a7f2b83c') in 0.011586 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Heart01_00.mat
-  artifactKey: Guid(c41be0add401458459f6a27cacb78209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Heart01_00.mat using Guid(c41be0add401458459f6a27cacb78209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1766a4cddca1169c3462c8147e13d171') in 0.010486 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Club08_00.mat
-  artifactKey: Guid(f44b29d0e6320604ba628d8b3f9d58dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Club08_00.mat using Guid(f44b29d0e6320604ba628d8b3f9d58dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9af69308b3645ffe4dcce887282ca82c') in 0.010642 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Diamond13_00.mat
-  artifactKey: Guid(f1c1c2c335123b947a37b566c80733ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Diamond13_00.mat using Guid(f1c1c2c335123b947a37b566c80733ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '626ded7be9ee1d385e7eeae70f3cbd37') in 0.010322 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Club01_00.mat
-  artifactKey: Guid(438ef3c26a0638f428d7d8c84ba2b6d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Club01_00.mat using Guid(438ef3c26a0638f428d7d8c84ba2b6d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '875c627eea40be53480f5ab105556b80') in 0.011411 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Spade06_00.mat
-  artifactKey: Guid(b93a9b47935cb9043a32689692fd082d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Spade06_00.mat using Guid(b93a9b47935cb9043a32689692fd082d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3fe6c5248fdbaf46ffd66422b6542ff') in 0.010596 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Spade09_00.mat
-  artifactKey: Guid(c4211f5ef6df764499354c11957e3d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Spade09_00.mat using Guid(c4211f5ef6df764499354c11957e3d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11ac495cd386770ff99ed65c844eb9ee') in 0.011845 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Heart06_00.mat
-  artifactKey: Guid(fe734dc2b020b13469e4622f314acd9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Heart06_00.mat using Guid(fe734dc2b020b13469e4622f314acd9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c41d26d4e4c1428bcda49d1faab26349') in 0.011524 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Heart11_00.mat
-  artifactKey: Guid(78c56483acd0d4145aaad38ee93b5b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Heart11_00.mat using Guid(78c56483acd0d4145aaad38ee93b5b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c6aae3a24cd2eb1630ab70b9d87f1dd') in 0.012169 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Diamond07_00.mat
-  artifactKey: Guid(17a453515ae7f0c4090f004f088962b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Diamond07_00.mat using Guid(17a453515ae7f0c4090f004f088962b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '596cf56c0da93469b34f4121e41f5d5a') in 0.011442 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Spade02_00.mat
-  artifactKey: Guid(a8315853fb393a446bad16c62d742c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Spade02_00.mat using Guid(a8315853fb393a446bad16c62d742c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bb20d95a07223e098791785b3c51745') in 0.011362 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Spade10_00.mat
-  artifactKey: Guid(92d490a6787fd9a4d9cd4c8ee588cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Spade10_00.mat using Guid(92d490a6787fd9a4d9cd4c8ee588cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b9a3354f85e7c67fa8fa473ec08afbc') in 0.010828 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Spade07_00.mat
-  artifactKey: Guid(2e5bf23a205fd4a49b621fd59287f48c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Spade07_00.mat using Guid(2e5bf23a205fd4a49b621fd59287f48c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b67382c6422dae3a5c1ca6fea408862') in 0.011551 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Heart05_00.mat
-  artifactKey: Guid(d9618ddf7e553bd4794dd006340fc948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Heart05_00.mat using Guid(d9618ddf7e553bd4794dd006340fc948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e63994641ab6338dabab555a03ebd9c') in 0.011757 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Spade11_00.mat
-  artifactKey: Guid(2b9a9d910de851e44a060e9d9b32474f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Spade11_00.mat using Guid(2b9a9d910de851e44a060e9d9b32474f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '942f51a83336f7dad66ec3f3d60ef04e') in 0.011289 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Heart12_00.mat
-  artifactKey: Guid(447ba3047782f8840905ed11606a12ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Heart12_00.mat using Guid(447ba3047782f8840905ed11606a12ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64a519d4e0a85bde460aa529bb1f3bed') in 0.011595 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Club10_00.mat
-  artifactKey: Guid(2e743a691a07d1b49827c34d7f34f6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Club10_00.mat using Guid(2e743a691a07d1b49827c34d7f34f6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c6a6c2b74daab2e4d6b84fccf2758e0') in 0.011954 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Joker_10.mat
-  artifactKey: Guid(170bed0ed799b12419386dfa46b79da7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Joker_10.mat using Guid(170bed0ed799b12419386dfa46b79da7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01b8dcd06a85aa57444f7c322b349be1') in 0.011837 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Resources/CardTextures/Blue_PlayingCards_Club13_00.mat
-  artifactKey: Guid(f5ce59837b3bfbe4fb67731b0bebcaf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/CardTextures/Blue_PlayingCards_Club13_00.mat using Guid(f5ce59837b3bfbe4fb67731b0bebcaf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e54cec6f8c13aedb239772dc1362aa08') in 0.011854 seconds 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: Operacja We/Wy zosta³a przerwana z powodu zakoñczenia w¹tku lub ¿¹dania aplikacji.
 AssetImportWorker is now disconnected from the server
 Process exiting
 Exiting without the bug reporter. Application will terminate with return code 0
