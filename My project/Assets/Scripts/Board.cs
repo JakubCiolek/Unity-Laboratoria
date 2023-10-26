@@ -4,33 +4,40 @@ using UnityEngine;
 
 public class Board : MonoBehaviour
 {
-    public GameObject tilePrefab; // Prefab dla kafelka
-    public int rows = 2; // Liczba wierszy
-    public int columns = 2; // Liczba kolumn
+    public GameObject tilePrefab; // Prefabrykat dla pojedynczego kafelka (pola na planszy)
+    public int rows = 2; // Liczba wierszy na planszy
+    public int columns = 2; // Liczba kolumn na planszy
 
+    // Metoda Start wywoływana przy starcie gry
     void Start()
     {
-        CreateBoard();
+        CreateBoard(); // Tworzenie planszy
     }
 
+    // Metoda do tworzenia planszy z kafelkami
     void CreateBoard()
     {
         for (int row = 0; row < rows; row++)
         {
             for (int col = 0; col < columns; col++)
             {
-                // Oblicz pozycj� dla ka�dego kafelka
-                Vector3 position = new Vector3(col * 10, 0, row * 10); // Zak�adam, �e ka�dy kafelek ma rozmiar 2x2 w jednostkach Unity.
+                // Oblicz pozycję dla każdego kafelka na podstawie indeksu wiersza i kolumny
+                Vector3 position = new Vector3(col * 10, 0, row * 10); // Zakładamy, że każdy kafelek ma rozmiar 10x10 jednostek w jednostkach Unity.
 
                 // Tworzenie nowego kafelka na podstawie prefabu i ustawienie pozycji
                 GameObject tile = Instantiate(tilePrefab, position, Quaternion.identity);
 
-                // Opcjonalnie mo�esz dostosowa� inny aspekt kafelka, takie jak kolor, tekstur�, itp.
+                // Opcjonalnie możesz dostosować inne cechy kafelka, takie jak kolor, teksturę, itp.
                 // tile.GetComponent<Renderer>().material.color = Color.white;
             }
         }
     }
-    void PlaceBuilding() { 
+
+    // Metoda do umieszczania budynków na planszy (nie jest jeszcze zaimplementowana)
+    void PlaceBuilding()
+    {
+        // Przygotuj kod do umieszczania budynków na planszy
+        // Przykładowo, uzyskaj pozycję, na której chcesz umieścić budynek i użyj Instantiate.
         Vector3 position = tilePrefab.transform.position;
         //GameObject tile = Instantiate(cube, position, Quaternion.identity);
     }

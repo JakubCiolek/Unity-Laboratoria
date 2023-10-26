@@ -6,32 +6,37 @@ using System;
 
 public class Cards : MonoBehaviour
 {
-    List<string> cardsList = new() { "Club01", "Club02", "Club03", "Club04", "Club05", "Club06", "Club07", "Club08", "Club09", "Club10", "Club11", "Club12", "Club13",
-                                "Diamond01", "Diamond02", "Diamond03", "Diamond04", "Diamond05", "Diamond06", "Diamond07", "Diamond08", "Diamond09", "Diamond10", "Diamond11", "Diamond12", "Diamond13",
-                                "Heart01", "Heart02", "Heart03", "Heart04", "Heart05", "Heart06", "Heart07", "Heart08", "Heart09", "Heart10", "Heart11", "Heart12", "Heart13",
-                                "Spade01", "Spade02", "Spade03", "Spade04", "Spade05", "Spade06", "Spade07", "Spade08", "Spade09", "Spade10", "Spade11", "Spade12", "Spade13"};
+    // Lista kart do wyboru
+    List<string> cardsList = new() { "Club07", "Club13", "Heart12", "Joker_Color" }; // zmieniłem tutaj żeby losować tylko te karty co mają tą naszą teksture 
+
+    // Przycisk reprezentujący pierwszą kartę
     public Button Card1;
-    //public Button Card2;
-    //public Button Card3;
-    //public Button Card4;
 
+    // Zmienne do śledzenia wybranej karty
     public bool CardChoosen = false;
-
     public string cardPick;
     public string card1;
     public string card2;
     public string card3;
     public string card4;
 
+    // Licznik, aby kontrolować ilość wybranych kart
     int Counter = 0;
 
-    public void CardPlaced(int i){
-            Card1.gameObject.SetActive(false);
-            cardPick = "";
-            CardChoosen = false;
+    // Metoda wywoływana, gdy karta jest umieszczana
+    public void CardPlaced(int i)
+    {
+        // Ukrycie karty i zresetowanie zmiennych
+        Card1.gameObject.SetActive(false);
+        cardPick = "";
+        CardChoosen = false;
     }
-    public void RandomCards() {
-        if(Counter < 4){
+
+    // Metoda do losowania kart
+    public void RandomCards()
+    {
+        if (Counter < 4)
+        {
             System.Random rnd = new System.Random();
 
             card1 = cardsList[rnd.Next(cardsList.Count)];
@@ -55,55 +60,54 @@ public class Cards : MonoBehaviour
         }
     }
 
-    public void ChooseCard(int i){
-        
-            Card1.gameObject.SetActive(false);
-            //Card2.gameObject.SetActive(false);
-            //Card3.gameObject.SetActive(false);
-            //Card4.gameObject.SetActive(false);
-        switch(i){
-        case 1:
-            Card1.gameObject.SetActive(true);
-                //CardChoosenName = Card1.GetComponent<Image>().sprite;
+    // Metoda do wyboru karty
+    public void ChooseCard(int i)
+    {
+        Card1.gameObject.SetActive(false);
+        //Card2.gameObject.SetActive(false);
+        //Card3.gameObject.SetActive(false);
+        //Card4.gameObject.SetActive(false);
+        switch (i)
+        {
+            case 1:
+                Card1.gameObject.SetActive(true);
                 cardPick = card1;
-            CardChoosen = true;
-            break;
-        // case 2:
-        //     Card2.gameObject.SetActive(true);
-        //         //CardChoosenName = Card2.GetComponent<Image>().sprite;
-        //         cardPick = card2;
-        //     CardChoosen = true;
-        //     break;
-        // case 3:
-        //     Card3.gameObject.SetActive(true);
-        //         //CardChoosenName = Card3.GetComponent<Image>().sprite;
-        //         cardPick = card3;
-        //     CardChoosen = true;
-        //     break;
-        // case 4:
-        //     Card4.gameObject.SetActive(true);
-        //         //CardChoosenName = Card4.GetComponent<Image>().sprite;
-        //         cardPick = card4;
-        //     CardChoosen = true;
-        //     break;
-        default:
-            Card1.gameObject.SetActive(true);
-            //Card2.gameObject.SetActive(true);
-            //Card3.gameObject.SetActive(true);
-            //Card4.gameObject.SetActive(true);
-            //CardChoosen = false;
-            break;
+                CardChoosen = true;
+                break;
+            // case 2:
+            //     Card2.gameObject.SetActive(true);
+            //     cardPick = card2;
+            //     CardChoosen = true;
+            //     break;
+            // case 3:
+            //     Card3.gameObject.SetActive(true);
+            //     cardPick = card3;
+            //     CardChoosen = true;
+            //     break;
+            // case 4:
+            //     Card4.gameObject.SetActive(true);
+            //     cardPick = card4;
+            //     CardChoosen = true;
+            //     break;
+            default:
+                Card1.gameObject.SetActive(true);
+                //Card2.gameObject.SetActive(true);
+                //Card3.gameObject.SetActive(true);
+                //Card4.gameObject.SetActive(true);
+                //CardChoosen = false;
+                break;
         }
     }
-    // Start is called before the first frame update
+
+    // Metoda wywoływana przy starcie
     void Start()
     {
         RandomCards();
     }
 
-    // Update is called once per frame
+    // Metoda Update - brak implementacji
     void Update()
     {
-        
+
     }
 }
