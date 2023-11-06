@@ -20,9 +20,14 @@ public class Cards : MonoBehaviour
     public string card3;
     public string card4;
 
+
     // Licznik, aby kontrolować ilość wybranych kart
     int Counter = 0;
 
+    // Metoda służąca do modyfikacji licznika
+    public void ChangeCounter(){
+        Counter--;
+    }
     // Metoda wywoływana, gdy karta jest umieszczana
     public void CardPlaced(int i)
     {
@@ -35,7 +40,9 @@ public class Cards : MonoBehaviour
     // Metoda do losowania kart
     public void RandomCards()
     {
-        if (Counter < 4)
+        if (Counter == 0)
+        Card1.gameObject.SetActive(true);
+        if (Counter < 4 )
         {
             System.Random rnd = new System.Random();
 
@@ -63,6 +70,7 @@ public class Cards : MonoBehaviour
     // Metoda do wyboru karty
     public void ChooseCard(int i)
     {
+        
         Card1.gameObject.SetActive(false);
         //Card2.gameObject.SetActive(false);
         //Card3.gameObject.SetActive(false);
@@ -70,6 +78,7 @@ public class Cards : MonoBehaviour
         switch (i)
         {
             case 1:
+           
                 Card1.gameObject.SetActive(true);
                 cardPick = card1;
                 CardChoosen = true;
@@ -102,7 +111,8 @@ public class Cards : MonoBehaviour
     // Metoda wywoływana przy starcie
     void Start()
     {
-        RandomCards();
+        Card1.gameObject.SetActive(false);
+       // RandomCards();
     }
 
     // Metoda Update - brak implementacji
