@@ -7,8 +7,8 @@ using System;
 public class Cards : MonoBehaviour
 {
     // Lista kart do wyboru
-    List<string> cardsList = new() { "Club07", "Club13", "Heart12", "Joker_Color" }; // zmieniłem tutaj żeby losować tylko te karty co mają tą naszą teksture 
-
+    //List<string> cardsList = new() { "Club07", "Club13", "Heart12", "Joker_Color" }; // zmieniłem tutaj żeby losować tylko te karty co mają tą naszą teksture 
+    List<Card> ListOfCards = new() {new Card("Club7"), new Card("Club13"), new Card("Heart12"), new Card("Joker_Color")};
     // Przycisk reprezentujący pierwszą kartę
     public Button Card1;
 
@@ -46,7 +46,7 @@ public class Cards : MonoBehaviour
         {
             System.Random rnd = new System.Random();
 
-            card1 = cardsList[rnd.Next(cardsList.Count)];
+            card1 = ListOfCards[rnd.Next(ListOfCards.Count)].Name;
             //card2 = cardsList[rnd.Next(cardsList.Count)];
             //card3 = cardsList[rnd.Next(cardsList.Count)];
             //card4 = cardsList[rnd.Next(cardsList.Count)];
