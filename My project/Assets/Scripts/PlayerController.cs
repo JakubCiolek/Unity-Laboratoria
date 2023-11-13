@@ -20,9 +20,9 @@ public class NewBehaviourScript : MonoBehaviour
         controller.Move(movement*moveSpeed * Time.deltaTime);
 
                 // Sprawdzenie, czy gracz nie opuszcza mapy
-        UnityEngine.Vector3 newPosition = transform.position + movement * moveSpeed * Time.deltaTime;
-        newPosition.x = Mathf.Clamp(newPosition.x, 0, mapSize);
-        newPosition.z = Mathf.Clamp(newPosition.z, 0, mapSize);
-        transform.position = newPosition;
+        // UnityEngine.Vector3 newPosition = transform.position + movement * moveSpeed * Time.deltaTime;
+        // newPosition.x = Mathf.Clamp(newPosition.x, 0, mapSize);
+        // newPosition.z = Mathf.Clamp(newPosition.z, 0, mapSize);
+        // transform.position = newPosition;
     }
 }

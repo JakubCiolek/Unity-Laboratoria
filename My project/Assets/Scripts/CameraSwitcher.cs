@@ -38,6 +38,7 @@ public class CameraSwitcher : MonoBehaviour
                 //firstPersonController = Instantiate(firstPersonController, new Vector3(objectCenter.x, 0.1f, objectCenter.z));
                 firstPersonController.gameObject.SetActive(true);
                 SetActiveCamera(secondCamera);
+                Cursor.lockState = CursorLockMode.Locked;
               //ustawianie widocznośći przycisków na wylączone
                 CardButton.gameObject.SetActive(false);
                 DrawButton.gameObject.SetActive(false);
@@ -46,6 +47,7 @@ public class CameraSwitcher : MonoBehaviour
             {
                 SetActiveCamera(firstCamera);
                 firstPersonController.gameObject.SetActive(false);
+                Cursor.lockState = CursorLockMode.None;
                //ustawianie widocznośći przycisków na włączone
                 CardButton.gameObject.SetActive(false);
                 DrawButton.gameObject.SetActive(true);

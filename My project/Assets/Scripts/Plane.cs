@@ -167,25 +167,20 @@ public class Plane : MonoBehaviour
             switch(random)
             {
                 case 0:
-                    tree = Instantiate(oakTree, new Vector3(objectCenter.x + objectCenter.z/2, objectCenter.y, objectCenter.z + objectCenter.x/2), oakTree.transform.rotation);
+                    tree = Instantiate(oakTree, new Vector3((objectCenter.x + objectCenter.z/2) + 0.3f,objectCenter.y, (objectCenter.z + objectCenter.x/2) + 0.3f), oakTree.transform.rotation);
                     break;
                 case 1:
-                    tree = Instantiate(palmTree, new Vector3(objectCenter.x + objectCenter.z/2, objectCenter.y, objectCenter.z + objectCenter.x/2), palmTree.transform.rotation);
+                    tree = Instantiate(palmTree, new Vector3((objectCenter.x + objectCenter.z/2) + 0.3f, objectCenter.y, (objectCenter.z + objectCenter.x/2) + 0.3f), palmTree.transform.rotation);
                     break;
                 case 2:
-                    tree = Instantiate(firTree, new Vector3(objectCenter.x + objectCenter.z/2, objectCenter.y, objectCenter.z + objectCenter.x/2), firTree.transform.rotation);
+                    tree = Instantiate(firTree, new Vector3((objectCenter.x + objectCenter.z/2) + 0.3f,objectCenter.y, (objectCenter.z + objectCenter.x/2) + 0.3f), firTree.transform.rotation);
                     break;
                 case 3:
-                    newfountain = Instantiate(fountain, new Vector3(objectCenter.x + objectCenter.z/2, objectCenter.y, objectCenter.z + objectCenter.x/2), fountain.transform.rotation);
+                    newfountain = Instantiate(fountain, new Vector3((objectCenter.x + objectCenter.z/2) + 0.3f, objectCenter.y, (objectCenter.z + objectCenter.x/2) + 0.3f), fountain.transform.rotation);
                     break;
                 default:
                     break;
             }
         }
-    }
-
-    private void GenerateFountain()
-    {
-        
     }
 }

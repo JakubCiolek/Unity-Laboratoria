@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 3359438}
   - component: {fileID: 2354436}
   - component: {fileID: 20518526}
+  - component: {fileID: 5844565935665271771}
   m_Layer: 0
   m_Name: fountain_LOD0
   m_TagString: Untagged
@@ -112,7 +113,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 422104}
@@ -195,6 +196,29 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers: []
   m_Enabled: 1
+--- !u!136 &5844565935665271771
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178508}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.9
+  m_Height: 7
+  m_Direction: 2
+  m_Center: {x: -0.00000017881393, y: -0.00000041723263, z: 1.4413046}
 --- !u!1 &7022167925187956518
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,7 +247,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -0, y: -0, z: 2.87}
-  m_LocalScale: {x: 0.339465, y: 0.35488158, z: 0.68776}
+  m_LocalScale: {x: 0.21640892, y: 0.21292897, z: 0.68776}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 417748}
@@ -311,7 +335,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 1.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -364,7 +388,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 3
+      scalar: 1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
