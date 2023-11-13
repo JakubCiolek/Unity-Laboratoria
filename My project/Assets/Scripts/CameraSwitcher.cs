@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEditor.UI;
 using UnityEngine.UI;
+using Unity.VisualScripting;
 
 public class CameraSwitcher : MonoBehaviour
 {
@@ -14,14 +15,16 @@ public class CameraSwitcher : MonoBehaviour
     public Button CardButton; //przycisk wyboru karty
 
     private Camera activeCamera; // Aktualnie aktywna kamera
-    
+
+    public GameObject firstPersonController;
 
     void Start()
     {
-        firstCamera.enabled = false;
-        secondCamera.enabled = false;
+        //firstCamera.enabled = false;
+        firstPersonController.gameObject.SetActive(false);
+        secondCamera = firstPersonController.GetComponent<Camera>();
         // Włącz pierwszą kamerę na początku
-        SetActiveCamera(firstCamera);
+        firstCamera.enabled = true;
     }
 
     void Update()
@@ -30,18 +33,24 @@ public class CameraSwitcher : MonoBehaviour
         // Przełączanie między kamerami za pomocą przycisku "C"
         if (HUD.gameObject.activeSelf == true && Input.GetKeyDown(KeyCode.C))
         {
-            if (activeCamera == firstCamera){
+            if (activeCamera == firstCamera)
+            {
+                //firstPersonController = Instantiate(firstPersonController, new Vector3(objectCenter.x, 0.1f, objectCenter.z));
+                firstPersonController.gameObject.SetActive(true);
                 SetActiveCamera(secondCamera);
               //ustawianie widocznośći przycisków na wylączone
                 CardButton.gameObject.SetActive(false);
                 DrawButton.gameObject.SetActive(false);
-                }
+            }
             else
-                {SetActiveCamera(firstCamera);
+            {
+                SetActiveCamera(firstCamera);
+                firstPersonController.gameObject.SetActive(false);
                //ustawianie widocznośći przycisków na włączone
                 CardButton.gameObject.SetActive(false);
-                 DrawButton.gameObject.SetActive(true);
-                }}
+                DrawButton.gameObject.SetActive(true);
+            }
+        }
     }
 
     void SetActiveCamera(Camera newActiveCamera)
