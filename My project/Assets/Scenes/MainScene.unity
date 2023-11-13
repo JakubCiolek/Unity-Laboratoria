@@ -2309,6 +2309,10 @@ MonoBehaviour:
   CardEmpty: {fileID: 6693041384023231204, guid: 3164b38464b3a9547beb4522f03f3031, type: 3}
   BombCount: {fileID: 1029850779}
   BombScript: {fileID: 441624584}
+  firTree: {fileID: 192044, guid: 0f9049522aa00574c914cdd709fcc580, type: 3}
+  oakTree: {fileID: 191266, guid: 90df8b505f802b141965307a595caecf, type: 3}
+  palmTree: {fileID: 188006, guid: 6b6a45b3dfd56784ca42bbb7b61e10ee, type: 3}
+  fountain: {fileID: 178508, guid: 8142860b8f89a564faf152e3c8b743e7, type: 3}
 --- !u!1 &751169590
 GameObject:
   m_ObjectHideFlags: 0
@@ -5021,6 +5025,7 @@ SceneRoots:
   - {fileID: 1338082592}
   - {fileID: 1084160176}
   - {fileID: 425870118}
+  - {fileID: 5767526235257672806}
   - {fileID: 5970329}
   - {fileID: 836375325}
   - {fileID: 510006441}
@@ -5028,4 +5033,3 @@ SceneRoots:
   - {fileID: 416980739}
   - {fileID: 271747213}
   - {fileID: 1837046381}
-  - {fileID: 5767526235257672806}

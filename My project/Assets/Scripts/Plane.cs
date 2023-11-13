@@ -44,6 +44,16 @@ public class Plane : MonoBehaviour
 
     // Nowa karta
     private GameObject newCard;
+    private GameObject tree;
+
+    private GameObject newfountain;
+
+    public GameObject firTree;
+    public GameObject oakTree;
+    public GameObject palmTree;
+    public GameObject fountain;
+
+
 
     // Metoda wywoływana przy starcie
     void Start()
@@ -116,18 +126,22 @@ public class Plane : MonoBehaviour
                 case "Diamond":
                     currentBuilding = Instantiate(FireStation, new Vector3(objectCenter.x, objectCenter.y, objectCenter.z), FireStation.transform.rotation);
                     AddCollider(currentBuilding);
+                    GenerateTreeorFountain(10, objectCenter);
                     break;
                 case "Heart":
                     currentBuilding = Instantiate(Hospital, new Vector3(objectCenter.x, objectCenter.y, objectCenter.z), Hospital.transform.rotation);
                     AddCollider(currentBuilding);
+                    GenerateTreeorFountain(10, objectCenter);
                     break;
                 case "Club":
                     currentBuilding = Instantiate(Market, new Vector3(objectCenter.x, objectCenter.y, objectCenter.z), Market.transform.rotation);
                     AddCollider(currentBuilding);
+                    GenerateTreeorFountain(10, objectCenter);
                     break;
                 case "Spade":
                     currentBuilding = Instantiate(Police, new Vector3(objectCenter.x, objectCenter.y, objectCenter.z), Police.transform.rotation);
                     AddCollider(currentBuilding);
+                    GenerateTreeorFountain(10, objectCenter);
                     break;
                 default:
                     break;
@@ -142,5 +156,36 @@ public class Plane : MonoBehaviour
             occupied = true;
             Cards.GetComponent<Cards>().CardPlaced(1);
         }
+    }
+
+    private void GenerateTreeorFountain(int chance , Vector3 objectCenter)
+    {
+        int random = Random.Range(1,10);
+        if(random <= chance)
+        {
+            random = Random.Range(0,4);
+            switch(random)
+            {
+                case 0:
+                    tree = Instantiate(oakTree, new Vector3(objectCenter.x + objectCenter.z/2, objectCenter.y, objectCenter.z + objectCenter.x/2), oakTree.transform.rotation);
+                    break;
+                case 1:
+                    tree = Instantiate(palmTree, new Vector3(objectCenter.x + objectCenter.z/2, objectCenter.y, objectCenter.z + objectCenter.x/2), palmTree.transform.rotation);
+                    break;
+                case 2:
+                    tree = Instantiate(firTree, new Vector3(objectCenter.x + objectCenter.z/2, objectCenter.y, objectCenter.z + objectCenter.x/2), firTree.transform.rotation);
+                    break;
+                case 3:
+                    newfountain = Instantiate(fountain, new Vector3(objectCenter.x + objectCenter.z/2, objectCenter.y, objectCenter.z + objectCenter.x/2), fountain.transform.rotation);
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+
+    private void GenerateFountain()
+    {
+        
     }
 }
