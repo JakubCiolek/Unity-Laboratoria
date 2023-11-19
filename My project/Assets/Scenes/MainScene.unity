@@ -4305,7 +4305,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.62797, z: 0.67917}
+  m_LocalScale: {x: 1, y: 0.62797, z: 1.451726}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1040640196}
@@ -5004,11 +5004,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1802237696133922218, guid: 5c73159f52a155f48b2fcad54077918f, type: 3}
       propertyPath: m_Height
-      value: 0.3
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1802237696133922218, guid: 5c73159f52a155f48b2fcad54077918f, type: 3}
       propertyPath: m_Radius
-      value: 0.1
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1802237696133922218, guid: 5c73159f52a155f48b2fcad54077918f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1802237696133922218, guid: 5c73159f52a155f48b2fcad54077918f, type: 3}
+      propertyPath: m_SlopeLimit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086851959847432081, guid: 5c73159f52a155f48b2fcad54077918f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.74311477
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086851959847432081, guid: 5c73159f52a155f48b2fcad54077918f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.68996
       objectReference: {fileID: 0}
     - target: {fileID: 2086851959847432081, guid: 5c73159f52a155f48b2fcad54077918f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5016,7 +5032,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2086851959847432081, guid: 5c73159f52a155f48b2fcad54077918f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.04
+      value: 0.394
       objectReference: {fileID: 0}
     - target: {fileID: 2086851959847432081, guid: 5c73159f52a155f48b2fcad54077918f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5053,6 +5069,10 @@ PrefabInstance:
     - target: {fileID: 3491869085007423415, guid: 5c73159f52a155f48b2fcad54077918f, type: 3}
       propertyPath: m_Name
       value: FirstPersonController
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528696972024568507, guid: 5c73159f52a155f48b2fcad54077918f, type: 3}
+      propertyPath: near clip plane
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 6708800893790923301, guid: 5c73159f52a155f48b2fcad54077918f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5101,6 +5121,10 @@ PrefabInstance:
     - target: {fileID: 9061773719427690273, guid: 5c73159f52a155f48b2fcad54077918f, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9061773719427690273, guid: 5c73159f52a155f48b2fcad54077918f, type: 3}
+      propertyPath: moveSpeed
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9061773719427690273, guid: 5c73159f52a155f48b2fcad54077918f, type: 3}
       propertyPath: controller

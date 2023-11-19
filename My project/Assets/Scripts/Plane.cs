@@ -36,6 +36,8 @@ public class Plane : MonoBehaviour
     // Aktualnie umieszczony budynek
     private GameObject currentBuilding;
 
+    private GameObject currentTreeFountain;
+
     // Skrypt obsługujący bomby
     public Bomb BombScript;
 
@@ -44,10 +46,6 @@ public class Plane : MonoBehaviour
 
     // Nowa karta
     private GameObject newCard;
-    private GameObject tree;
-
-    private GameObject newfountain;
-
     public GameObject firTree;
     public GameObject oakTree;
     public GameObject palmTree;
@@ -102,6 +100,8 @@ public class Plane : MonoBehaviour
             {
                 Destroy(currentBuilding); // Usuwamy budynek z pola
                 Destroy(newCard);
+                Destroy(currentTreeFountain);
+                
                 occupied = false; // Oznaczamy pole jako niezajęte
                 Count--; // Zmniejsz wartość o 1
                 BombCount.text = Count.ToString(); // Zaktualizuj tekst na podstawie zmienionej wartości Count
@@ -120,34 +120,7 @@ public class Plane : MonoBehaviour
             // Usuń cyfry z nazwy karty
             string output = Regex.Replace(card, @"[\d-]", string.Empty);
 
-            // W zależności od rodzaju karty, twórz odpowiednie obiekty na polu
-            switch (output)
-            {
-                case "Diamond":
-                    currentBuilding = Instantiate(FireStation, new Vector3(objectCenter.x, objectCenter.y, objectCenter.z), FireStation.transform.rotation);
-                    AddCollider(currentBuilding);
-                    GenerateTreeorFountain(10, objectCenter);
-                    break;
-                case "Heart":
-                    currentBuilding = Instantiate(Hospital, new Vector3(objectCenter.x, objectCenter.y, objectCenter.z), Hospital.transform.rotation);
-                    AddCollider(currentBuilding);
-                    GenerateTreeorFountain(10, objectCenter);
-                    break;
-                case "Club":
-                    currentBuilding = Instantiate(Market, new Vector3(objectCenter.x, objectCenter.y, objectCenter.z), Market.transform.rotation);
-                    AddCollider(currentBuilding);
-                    GenerateTreeorFountain(10, objectCenter);
-                    break;
-                case "Spade":
-                    currentBuilding = Instantiate(Police, new Vector3(objectCenter.x, objectCenter.y, objectCenter.z), Police.transform.rotation);
-                    AddCollider(currentBuilding);
-                    GenerateTreeorFountain(10, objectCenter);
-                    break;
-                default:
-                    break;
-            }
-
-            // Twórz nową kartę pustą na polu
+                        // Twórz nową kartę pustą na polu
             newCard = Instantiate(CardEmpty, new Vector3(objectCenter.x, 0.1f, objectCenter.z), CardEmpty.transform.rotation);
             MeshRenderer meshRenderer = newCard.GetComponent<MeshRenderer>();
             meshRenderer.material = Resources.Load<Material>("CardTextures/Blue_PlayingCards_" + card + "_00");
@@ -155,11 +128,41 @@ public class Plane : MonoBehaviour
             // Oznacz pole jako zajęte i wywołaj metodę "CardPlaced" w komponencie "Cards"
             occupied = true;
             Cards.GetComponent<Cards>().CardPlaced(1);
+
+            // W zależności od rodzaju karty, twórz odpowiednie obiekty na polu
+            switch (output)
+            {
+                case "Diamond":
+                    currentBuilding = Instantiate(FireStation, new Vector3(objectCenter.x, objectCenter.y, objectCenter.z), FireStation.transform.rotation);
+                    AddCollider(currentBuilding);
+                    GenerateTreeorFountain(10, currentBuilding);
+                    break;
+                case "Heart":
+                    currentBuilding = Instantiate(Hospital, new Vector3(objectCenter.x, objectCenter.y, objectCenter.z), Hospital.transform.rotation);
+                    AddCollider(currentBuilding);
+                    GenerateTreeorFountain(10, currentBuilding);
+                    break;
+                case "Club":
+                    currentBuilding = Instantiate(Market, new Vector3(objectCenter.x, objectCenter.y, objectCenter.z), Market.transform.rotation);
+                    AddCollider(currentBuilding);
+                    GenerateTreeorFountain(10, currentBuilding);
+                    break;
+                case "Spade":
+                    currentBuilding = Instantiate(Police, new Vector3(objectCenter.x, objectCenter.y, objectCenter.z), Police.transform.rotation);
+                    AddCollider(currentBuilding);
+                    GenerateTreeorFountain(10, currentBuilding);
+                    break;
+                default:
+                    break;
+            }
+            currentBuilding.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
         }
     }
 
-    private void GenerateTreeorFountain(int chance , Vector3 objectCenter)
+    private void GenerateTreeorFountain(int chance , GameObject card)
     {
+        Vector3 randomCorner = GetCoordinatesForBonus(card);
+
         int random = Random.Range(1,10);
         if(random <= chance)
         {
@@ -167,20 +170,48 @@ public class Plane : MonoBehaviour
             switch(random)
             {
                 case 0:
-                    tree = Instantiate(oakTree, new Vector3((objectCenter.x + objectCenter.z/2) + 0.3f,objectCenter.y, (objectCenter.z + objectCenter.x/2) + 0.3f), oakTree.transform.rotation);
+                    currentTreeFountain = Instantiate(oakTree, randomCorner, oakTree.transform.rotation);
                     break;
                 case 1:
-                    tree = Instantiate(palmTree, new Vector3((objectCenter.x + objectCenter.z/2) + 0.3f, objectCenter.y, (objectCenter.z + objectCenter.x/2) + 0.3f), palmTree.transform.rotation);
+                    currentTreeFountain = Instantiate(palmTree, randomCorner, palmTree.transform.rotation);
                     break;
                 case 2:
-                    tree = Instantiate(firTree, new Vector3((objectCenter.x + objectCenter.z/2) + 0.3f,objectCenter.y, (objectCenter.z + objectCenter.x/2) + 0.3f), firTree.transform.rotation);
+                    currentTreeFountain = Instantiate(firTree, randomCorner, firTree.transform.rotation);
                     break;
                 case 3:
-                    newfountain = Instantiate(fountain, new Vector3((objectCenter.x + objectCenter.z/2) + 0.3f, objectCenter.y, (objectCenter.z + objectCenter.x/2) + 0.3f), fountain.transform.rotation);
+                    randomCorner.y = 0.1f;
+                    currentTreeFountain = Instantiate(fountain, randomCorner, fountain.transform.rotation);
                     break;
                 default:
                     break;
             }
+        }
+    }
+
+    private Vector3 GetCoordinatesForBonus(GameObject obj)
+    {
+        Renderer objRenderer = obj.GetComponent<Renderer>();
+
+        if (objRenderer != null)
+        {
+            Bounds objBounds = objRenderer.bounds;
+
+            // Wybierz losowy punkt wewnątrz granic obiektu
+            Vector3 buildingCenter = objBounds.center;
+            buildingCenter.y = 0f;
+
+            while(objBounds.Contains(buildingCenter))
+            {
+                buildingCenter.x +=Random.Range(0f,0.1f);;
+                buildingCenter.z +=Random.Range(0f,0.1f);;
+            }
+            return buildingCenter;
+
+        }
+        else
+        {
+            Debug.LogError("Object is missing Renderer component.");
+            return Vector3.zero;
         }
     }
 }
