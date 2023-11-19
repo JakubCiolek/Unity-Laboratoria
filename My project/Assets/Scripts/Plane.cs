@@ -135,22 +135,22 @@ public class Plane : MonoBehaviour
                 case "Diamond":
                     currentBuilding = Instantiate(FireStation, new Vector3(objectCenter.x, objectCenter.y, objectCenter.z), FireStation.transform.rotation);
                     AddCollider(currentBuilding);
-                    GenerateTreeorFountain(10, currentBuilding);
+                    GenerateTreeorFountain(10, newCard);
                     break;
                 case "Heart":
                     currentBuilding = Instantiate(Hospital, new Vector3(objectCenter.x, objectCenter.y, objectCenter.z), Hospital.transform.rotation);
                     AddCollider(currentBuilding);
-                    GenerateTreeorFountain(10, currentBuilding);
+                    GenerateTreeorFountain(10, newCard);
                     break;
                 case "Club":
                     currentBuilding = Instantiate(Market, new Vector3(objectCenter.x, objectCenter.y, objectCenter.z), Market.transform.rotation);
                     AddCollider(currentBuilding);
-                    GenerateTreeorFountain(10, currentBuilding);
+                    GenerateTreeorFountain(10, newCard);
                     break;
                 case "Spade":
                     currentBuilding = Instantiate(Police, new Vector3(objectCenter.x, objectCenter.y, objectCenter.z), Police.transform.rotation);
                     AddCollider(currentBuilding);
-                    GenerateTreeorFountain(10, currentBuilding);
+                    GenerateTreeorFountain(10, newCard);
                     break;
                 default:
                     break;
@@ -197,15 +197,20 @@ public class Plane : MonoBehaviour
             Bounds objBounds = objRenderer.bounds;
 
             // Wybierz losowy punkt wewnątrz granic obiektu
-            Vector3 buildingCenter = objBounds.center;
-            buildingCenter.y = 0f;
-
-            while(objBounds.Contains(buildingCenter))
+            Vector3 cardCenter = objBounds.center;
+            cardCenter.y = 0f;
+            if(Random.Range(0,2) == 1)
             {
-                buildingCenter.x +=Random.Range(0f,0.1f);;
-                buildingCenter.z +=Random.Range(0f,0.1f);;
+                cardCenter.x +=Random.Range(-0.8f,-1.5f);
+                cardCenter.x +=Random.Range(-0.8f,-1.5f);
             }
-            return buildingCenter;
+            else
+            {
+                cardCenter.z +=Random.Range(0.8f,1.5f);
+                cardCenter.z +=Random.Range(0.8f,1.5f);
+            }
+               
+            return cardCenter;
 
         }
         else
