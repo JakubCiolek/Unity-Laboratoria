@@ -96,9 +96,10 @@ GameObject:
   - component: {fileID: 2354436}
   - component: {fileID: 20518526}
   - component: {fileID: 5844565935665271771}
+  - component: {fileID: 2702006729694651934}
   m_Layer: 0
   m_Name: fountain_LOD0
-  m_TagString: Untagged
+  m_TagString: SurfaceNotWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -219,6 +220,22 @@ CapsuleCollider:
   m_Height: 7
   m_Direction: 2
   m_Center: {x: -0.00000017881393, y: -0.00000041723263, z: 1.4413046}
+--- !u!208 &2702006729694651934
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178508}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.835, y: 1.835, z: 1.4410001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 1.4410001}
+  m_TimeToStationary: 0.5
 --- !u!1 &7022167925187956518
 GameObject:
   m_ObjectHideFlags: 0

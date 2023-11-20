@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Text.RegularExpressions;
 using TMPro;
+using UnityEditor;
+using UnityEngine.AI;
+using Unity.AI.Navigation;
+using System;
 
 public class Plane : MonoBehaviour
 {
@@ -41,6 +45,8 @@ public class Plane : MonoBehaviour
     // Skrypt obsługujący bomby
     public Bomb BombScript;
 
+    public NavMeshSurface navMesh;
+
     // Tryb bomby (wartość statyczna)
     private static bool BombMode { get; set; }
 
@@ -51,12 +57,19 @@ public class Plane : MonoBehaviour
     public GameObject palmTree;
     public GameObject fountain;
 
+    public GameObject human;
+
+
 
 
     // Metoda wywoływana przy starcie
     void Start()
     {
-        // Brak implementacji w tym przypadku
+        navMesh.BuildNavMesh();
+        for(int i =0 ; i<=100 ; i++)
+        {
+            Instantiate(human, new Vector3(5f,0.2f,5f), human.transform.rotation);
+        }
     }
 
     // Metoda Update - brak implementacji
@@ -156,6 +169,7 @@ public class Plane : MonoBehaviour
                     break;
             }
             currentBuilding.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+            navMesh.BuildNavMesh();
         }
     }
 
@@ -163,10 +177,10 @@ public class Plane : MonoBehaviour
     {
         Vector3 randomCorner = GetCoordinatesForBonus(card);
 
-        int random = Random.Range(1,10);
+        int random = UnityEngine.Random.Range(1,10);
         if(random <= chance)
         {
-            random = Random.Range(0,4);
+            random = UnityEngine.Random.Range(0,4);
             switch(random)
             {
                 case 0:
@@ -199,15 +213,15 @@ public class Plane : MonoBehaviour
             // Wybierz losowy punkt wewnątrz granic obiektu
             Vector3 cardCenter = objBounds.center;
             cardCenter.y = 0f;
-            if(Random.Range(0,2) == 1)
+            if(UnityEngine.Random.Range(0,2) == 1)
             {
-                cardCenter.x +=Random.Range(-0.8f,-1.5f);
-                cardCenter.x +=Random.Range(-0.8f,-1.5f);
+                cardCenter.x +=UnityEngine.Random.Range(-0.8f,-1.5f);
+                cardCenter.x +=UnityEngine.Random.Range(-0.8f,-1.5f);
             }
             else
             {
-                cardCenter.z +=Random.Range(0.8f,1.5f);
-                cardCenter.z +=Random.Range(0.8f,1.5f);
+                cardCenter.z +=UnityEngine.Random.Range(0.8f,1.5f);
+                cardCenter.z +=UnityEngine.Random.Range(0.8f,1.5f);
             }
                
             return cardCenter;

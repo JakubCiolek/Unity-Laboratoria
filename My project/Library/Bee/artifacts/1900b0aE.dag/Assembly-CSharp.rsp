@@ -365,6 +365,7 @@
 "Assets/Scripts/Cards.cs"
 "Assets/Scripts/Difficulty.cs"
 "Assets/Scripts/EndGame.cs"
+"Assets/Scripts/human.cs"
 "Assets/Scripts/Level.cs"
 "Assets/Scripts/Move.cs"
 "Assets/Scripts/Plane.cs"

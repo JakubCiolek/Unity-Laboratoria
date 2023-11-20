@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 3398346}
   - component: {fileID: 2340482}
   - component: {fileID: 6942444572522736762}
+  - component: {fileID: 4571233352795097143}
   m_Layer: 0
   m_Name: Oak_Tree
-  m_TagString: Untagged
+  m_TagString: SurfaceNotWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -105,3 +106,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.956306, y: 5.3144393, z: 2.8369026}
   m_Center: {x: 0.041702807, y: 2.6472833, z: 0.09605491}
+--- !u!208 &4571233352795097143
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191266}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.978, y: 2.657, z: 1.4180001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.042000003, y: 2.647, z: 0.096}
+  m_TimeToStationary: 0.5
