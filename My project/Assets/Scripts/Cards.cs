@@ -19,8 +19,13 @@ public class Cards : MonoBehaviour
     public string card2;
     public string card3;
     public string card4;
+    private static DifficultyLevel DifficultyLevel { get; set; } // Wybrany poziom trudności
 
-
+    public DifficultyLevel GetDifficultyLevel(DifficultyLevel Difficulty)
+    {
+        DifficultyLevel = Difficulty;
+        return DifficultyLevel;
+    }
     // Licznik, aby kontrolować ilość wybranych kart
     int Counter = 0;
 
@@ -42,7 +47,7 @@ public class Cards : MonoBehaviour
     {
         if (Counter == 0)
         Card1.gameObject.SetActive(true);
-        if (Counter < 4 )
+        if (Counter < DifficultyLevel.RedrawCount )
         {
             System.Random rnd = new System.Random();
 

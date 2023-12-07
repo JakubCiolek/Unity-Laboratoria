@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -282,8 +282,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -318,7 +318,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -1.2624512, y: 0, z: 1.3193359, w: 0}
+  m_margin: {x: -348.20697, y: -14.26709, z: 1.3193359, w: -12.713562}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1550,6 +1550,57 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursorTexture: {fileID: 2800000, guid: 0bd0f8c071aa27d44a299d36fdc06d19, type: 3}
   PlaneScript: {fileID: 733046571}
+--- !u!1 &463070644
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 463070646}
+  - component: {fileID: 463070645}
+  m_Layer: 0
+  m_Name: CardScript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &463070645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463070644}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b941289742b06db459174ed332d0fae9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Card1: {fileID: 0}
+  CardChoosen: 0
+  cardPick: 
+  card1: 
+  card2: 
+  card3: 
+  card4: 
+--- !u!4 &463070646
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463070644}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 695.3862, y: 383.9525, z: -776.56866}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &480284600
 GameObject:
   m_ObjectHideFlags: 0
@@ -4586,6 +4637,7 @@ MonoBehaviour:
   MinMaxText: {fileID: 72756907}
   startMenu: {fileID: 1837046380}
   inputNickname: {fileID: 329715536}
+  CardsScript: {fileID: 463070645}
   EasyIcon: {fileID: 21300000, guid: 7d3e337edcfe664419545a786a0b7f20, type: 3}
   MediumIcon: {fileID: 21300000, guid: 0c928b5bfe3f6c248ad3bb2fa3419eae, type: 3}
   HardIcon: {fileID: 21300000, guid: 2ef7e6aa288f8ad4aa63c483e9670850, type: 3}
@@ -5235,3 +5287,4 @@ SceneRoots:
   - {fileID: 271747213}
   - {fileID: 1837046381}
   - {fileID: 349001634}
+  - {fileID: 463070646}

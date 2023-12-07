@@ -25,6 +25,7 @@ public class Difficulty : MonoBehaviour
     public TMP_InputField inputNickname; // Pole do wprowadzania nazwy gracza
     private bool Picked = false; // Flaga wskazująca, czy wybrano poziom trudności
     private DifficultyLevel Lvl; // Aktualnie wybrany poziom trudności
+    public Cards CardsScript; // Skrypt kart
     // Ikony trudności
     public Sprite EasyIcon; 
     public Sprite MediumIcon;
@@ -41,6 +42,7 @@ public class Difficulty : MonoBehaviour
             LevelName = "Easy",
             Icon = EasyIcon,
             NumberOfBombs = 3,
+            RedrawCount = 8,
             Parameters = new List<Parameter>
             {
                 new Parameter { Key = "min", ValueConretePercentage = 10,
@@ -54,6 +56,7 @@ public class Difficulty : MonoBehaviour
             LevelName = "Medium",
             Icon = MediumIcon,
             NumberOfBombs = 2,
+            RedrawCount = 6,
             Parameters = new List<Parameter>
             {
                 new Parameter { Key = "min", ValueConretePercentage = 15,
@@ -67,6 +70,7 @@ public class Difficulty : MonoBehaviour
             LevelName = "Hard",
             Icon = HardIcon,
             NumberOfBombs = 1,
+            RedrawCount = 4,
             Parameters = new List<Parameter>
             {
                 new Parameter { Key = "min", ValueConretePercentage = 20,
@@ -164,6 +168,7 @@ public class Difficulty : MonoBehaviour
     {
         if (Nickname.Length != 0 && Picked == true)
         {
+            CardsScript.GetComponent<Cards>().GetDifficultyLevel(Lvl);
             UserNickname.text = Nickname; // Ustaw nazwę gracza
             DrawButton.interactable = true; // Aktywuj przycisk rysowania
             HUD.gameObject.SetActive(true); // Aktywuj interfejs użytkownika
@@ -199,6 +204,7 @@ public class DifficultyLevel
     public string LevelName; // Nazwa poziomu trudności
     public Sprite Icon; // Ikona poziomu trudności
     public int NumberOfBombs; // Liczba bomb
+    public int RedrawCount; // Liczba ponownych losowań karty
     public List<Parameter> Parameters = new List<Parameter>(); // Lista parametrów
 }
 
