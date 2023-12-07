@@ -43,8 +43,10 @@ public class Difficulty : MonoBehaviour
             NumberOfBombs = 3,
             Parameters = new List<Parameter>
             {
-                new Parameter { Key = "min", Value = 3 },
-                new Parameter { Key = "max", Value = 10 }
+                new Parameter { Key = "min", ValueConretePercentage = 10,
+                ValueGreenPercentage = 15, ValueFlatAvg = 50, ValueTreesAvg = 10},
+                new Parameter { Key = "max", ValueConretePercentage = 50,
+                ValueGreenPercentage = 70, ValueFlatAvg = 130, ValueTreesAvg = 50}
             }
         },
         new DifficultyLevel
@@ -54,8 +56,10 @@ public class Difficulty : MonoBehaviour
             NumberOfBombs = 2,
             Parameters = new List<Parameter>
             {
-                new Parameter { Key = "min", Value = 5 },
-                new Parameter { Key = "max", Value = 8 }
+                new Parameter { Key = "min", ValueConretePercentage = 15,
+                ValueGreenPercentage = 20, ValueFlatAvg = 60, ValueTreesAvg = 15},
+                new Parameter { Key = "max", ValueConretePercentage = 40,
+                ValueGreenPercentage = 60, ValueFlatAvg = 110, ValueTreesAvg = 40}
             }
         },
         new DifficultyLevel
@@ -65,8 +69,10 @@ public class Difficulty : MonoBehaviour
             NumberOfBombs = 1,
             Parameters = new List<Parameter>
             {
-                new Parameter { Key = "min", Value = 6 },
-                new Parameter { Key = "max", Value = 7 }
+                new Parameter { Key = "min", ValueConretePercentage = 20,
+                ValueGreenPercentage = 30, ValueFlatAvg = 70, ValueTreesAvg = 20},
+                new Parameter { Key = "max", ValueConretePercentage = 30,
+                ValueGreenPercentage = 50, ValueFlatAvg = 90, ValueTreesAvg = 30}
             }
         }
     };
@@ -167,9 +173,14 @@ public class Difficulty : MonoBehaviour
             DifImage.sprite = Lvl.Icon; // Ustaw ikonę poziomu trudności
             BombCount.text = Lvl.NumberOfBombs.ToString(); // Ustaw liczbę bomb
             // Ustawienie tekstu parametrów
-            string minText = "min: " + Lvl.Parameters.FirstOrDefault(p => p.Key == "min")?.Value.ToString();
-            string maxText = "max: " + Lvl.Parameters.FirstOrDefault(p => p.Key == "max")?.Value.ToString();
-            string parametersText = minText + ", " + maxText;
+
+            Parameter minText = Lvl.Parameters.FirstOrDefault(p => p.Key == "min");
+            Parameter maxText = Lvl.Parameters.FirstOrDefault(p => p.Key == "max");
+            string concrete = "Concrete: " + minText.ValueConretePercentage   + "% - " + maxText.ValueConretePercentage + "%\n";
+            string green = "Green: " + minText.ValueGreenPercentage   + "% - " + maxText.ValueGreenPercentage + "%\n";
+            string flat = "Flats: " + minText.ValueFlatAvg  + " - " + maxText.ValueFlatAvg + " average per card\n";
+            string trees = "Trees: " + minText.ValueTreesAvg  + " - " + maxText.ValueTreesAvg + " average per card\n";
+            string parametersText = concrete + green + flat + trees;
             MinMaxText.text = parametersText;
         }
         else
@@ -195,6 +206,9 @@ public class DifficultyLevel
 public class Parameter
 {
     public string Key;
-    public int Value;
+    public int ValueConretePercentage;
+    public int ValueGreenPercentage;
+    public int ValueFlatAvg;
+    public int ValueTreesAvg;
 }
 
