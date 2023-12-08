@@ -6,6 +6,10 @@ TagManager:
   tags:
   - SurfaceNotWalkable
   - SurfaceWalkable
+  - tile00
+  - tile01
+  - tile10
+  - tile11
   layers:
   - Default
   - TransparentFX
@@ -13,7 +17,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - NavMeshObstacles
   - 
   - 
   - 

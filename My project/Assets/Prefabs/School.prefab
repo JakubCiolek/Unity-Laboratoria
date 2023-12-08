@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3250902957672360080}
   - component: {fileID: 790786689844059226}
   - component: {fileID: 6018318025491600451}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: School
   m_TagString: SurfaceNotWalkable
   m_Icon: {fileID: 0}

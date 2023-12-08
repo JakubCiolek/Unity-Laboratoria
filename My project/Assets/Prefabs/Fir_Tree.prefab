@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2377290}
   - component: {fileID: 6017439758970898914}
   - component: {fileID: 4804015710600123942}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fir_Tree
   m_TagString: SurfaceNotWalkable
   m_Icon: {fileID: 0}

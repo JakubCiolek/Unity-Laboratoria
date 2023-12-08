@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9038214152448103536}
   - component: {fileID: 6524265241071788218}
   - component: {fileID: 864794353062615287}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Market
   m_TagString: SurfaceNotWalkable
   m_Icon: {fileID: 0}

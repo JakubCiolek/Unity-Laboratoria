@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class Board : MonoBehaviour
@@ -26,7 +27,9 @@ public class Board : MonoBehaviour
 
                 // Tworzenie nowego kafelka na podstawie prefabu i ustawienie pozycji
                 GameObject tile = Instantiate(tilePrefab, position, Quaternion.identity);
-
+                tile.gameObject.tag = "tile" +row.ToString() + col.ToString();
+                Plane plane = tile.GetComponent<Plane>();
+                plane.InitrializePos(row,col);
                 // Opcjonalnie możesz dostosować inne cechy kafelka, takie jak kolor, teksturę, itp.
                 // tile.GetComponent<Renderer>().material.color = Color.white;
             }

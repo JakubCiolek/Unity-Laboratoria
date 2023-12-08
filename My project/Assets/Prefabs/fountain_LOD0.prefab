@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 422104}
   - component: {fileID: 3362406}
   - component: {fileID: 2377078}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fountain_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 20518526}
   - component: {fileID: 5844565935665271771}
   - component: {fileID: 2702006729694651934}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fountain_LOD0
   m_TagString: SurfaceNotWalkable
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 6950906440093747163}
   - component: {fileID: 1390439305881925918}
   - component: {fileID: 6364657355352225642}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}

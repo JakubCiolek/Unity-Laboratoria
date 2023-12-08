@@ -8,7 +8,7 @@ public class Cards : MonoBehaviour
 {
     // Lista kart do wyboru
     //List<string> cardsList = new() { "Club07", "Club13", "Heart12", "Joker_Color" }; // zmieniłem tutaj żeby losować tylko te karty co mają tą naszą teksture 
-    List<Card> ListOfCards = new() {new Card("Club07"), new Card("Club13"), new Card("Heart12"), new Card("Spade06")};
+    List<Card> ListOfCards = new() {new Card("Club08"), new Card("Club10"), new Card("Heart13"), new Card("Spade06")};
     // Przycisk reprezentujący pierwszą kartę
     public Button Card1;
 

@@ -13,6 +13,14 @@ public class Plane : MonoBehaviour
     // Czy pole jest zajęte
     public bool occupied = false;
 
+    public string cardType = "None";
+
+    public int posX;
+
+    public int posY;
+
+    public PlacingCard CardPlacer;
+
     // Obiekt reprezentujący karty
     public GameObject Cards;
 
@@ -116,6 +124,7 @@ public class Plane : MonoBehaviour
                 Destroy(currentTreeFountain);
                 
                 occupied = false; // Oznaczamy pole jako niezajęte
+                CardPlacer.SaveCardType(posX,posY,"none");
                 Count--; // Zmniejsz wartość o 1
                 BombCount.text = Count.ToString(); // Zaktualizuj tekst na podstawie zmienionej wartości Count
                 Cards.GetComponent<Cards>().ChangeCounter();
@@ -132,44 +141,48 @@ public class Plane : MonoBehaviour
 
             // Usuń cyfry z nazwy karty
             string output = Regex.Replace(card, @"[\d-]", string.Empty);
-
-                        // Twórz nową kartę pustą na polu
-            newCard = Instantiate(CardEmpty, new Vector3(objectCenter.x, 0.1f, objectCenter.z), CardEmpty.transform.rotation);
-            MeshRenderer meshRenderer = newCard.GetComponent<MeshRenderer>();
-            meshRenderer.material = Resources.Load<Material>("CardTextures/Blue_PlayingCards_" + card + "_00");
-
-            // Oznacz pole jako zajęte i wywołaj metodę "CardPlaced" w komponencie "Cards"
-            occupied = true;
-            Cards.GetComponent<Cards>().CardPlaced(1);
-
-            // W zależności od rodzaju karty, twórz odpowiednie obiekty na polu
-            switch (output)
+            if(CardPlacer.CanCardBePlaced(output, posX,posY))
             {
-                case "Diamond":
-                    currentBuilding = Instantiate(FireStation, new Vector3(objectCenter.x, objectCenter.y, objectCenter.z), FireStation.transform.rotation);
-                    AddCollider(currentBuilding);
-                    GenerateTreeorFountain(10, newCard);
-                    break;
-                case "Heart":
-                    currentBuilding = Instantiate(Hospital, new Vector3(objectCenter.x, objectCenter.y, objectCenter.z), Hospital.transform.rotation);
-                    AddCollider(currentBuilding);
-                    GenerateTreeorFountain(10, newCard);
-                    break;
-                case "Club":
-                    currentBuilding = Instantiate(Market, new Vector3(objectCenter.x, objectCenter.y, objectCenter.z), Market.transform.rotation);
-                    AddCollider(currentBuilding);
-                    GenerateTreeorFountain(10, newCard);
-                    break;
-                case "Spade":
-                    currentBuilding = Instantiate(Police, new Vector3(objectCenter.x, objectCenter.y, objectCenter.z), Police.transform.rotation);
-                    AddCollider(currentBuilding);
-                    GenerateTreeorFountain(10, newCard);
-                    break;
-                default:
-                    break;
+                // Twórz nową kartę pustą na polu
+                newCard = Instantiate(CardEmpty, new Vector3(objectCenter.x, 0.1f, objectCenter.z), CardEmpty.transform.rotation);
+                MeshRenderer meshRenderer = newCard.GetComponent<MeshRenderer>();
+                meshRenderer.material = Resources.Load<Material>("CardTextures/Blue_PlayingCards_" + card + "_00");
+
+                // Oznacz pole jako zajęte i wywołaj metodę "CardPlaced" w komponencie "Cards"
+                occupied = true;
+                Cards.GetComponent<Cards>().CardPlaced(1);
+                cardType = output;
+                CardPlacer.SaveCardType(posX,posY,cardType);
+
+                // W zależności od rodzaju karty, twórz odpowiednie obiekty na polu
+                switch (output)
+                {
+                    case "Diamond":
+                        currentBuilding = Instantiate(FireStation, new Vector3(objectCenter.x, objectCenter.y, objectCenter.z), FireStation.transform.rotation);
+                        AddCollider(currentBuilding);
+                        GenerateTreeorFountain(10, newCard);
+                        break;
+                    case "Heart":
+                        currentBuilding = Instantiate(Hospital, new Vector3(objectCenter.x, objectCenter.y, objectCenter.z), Hospital.transform.rotation);
+                        AddCollider(currentBuilding);
+                        GenerateTreeorFountain(10, newCard);
+                        break;
+                    case "Club":
+                        currentBuilding = Instantiate(Market, new Vector3(objectCenter.x, objectCenter.y, objectCenter.z), Market.transform.rotation);
+                        AddCollider(currentBuilding);
+                        GenerateTreeorFountain(10, newCard);
+                        break;
+                    case "Spade":
+                        currentBuilding = Instantiate(Police, new Vector3(objectCenter.x, objectCenter.y, objectCenter.z), Police.transform.rotation);
+                        AddCollider(currentBuilding);
+                        GenerateTreeorFountain(10, newCard);
+                        break;
+                    default:
+                        break;
+                }
+                currentBuilding.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+                navMesh.BuildNavMesh();
             }
-            currentBuilding.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
-            navMesh.BuildNavMesh();
         }
     }
 
@@ -232,5 +245,11 @@ public class Plane : MonoBehaviour
             Debug.LogError("Object is missing Renderer component.");
             return Vector3.zero;
         }
+    }
+
+    public void InitrializePos(int x, int y)
+    {
+        posX = x;
+        posY = y;
     }
 }

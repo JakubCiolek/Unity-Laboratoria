@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2340482}
   - component: {fileID: 6942444572522736762}
   - component: {fileID: 4571233352795097143}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Oak_Tree
   m_TagString: SurfaceNotWalkable
   m_Icon: {fileID: 0}
