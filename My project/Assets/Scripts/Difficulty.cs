@@ -24,7 +24,7 @@ public class Difficulty : MonoBehaviour
     public Canvas startMenu; // Menu początkowe
     public TMP_InputField inputNickname; // Pole do wprowadzania nazwy gracza
     private bool Picked = false; // Flaga wskazująca, czy wybrano poziom trudności
-    private DifficultyLevel Lvl; // Aktualnie wybrany poziom trudności
+    public DifficultyLevel Lvl; // Aktualnie wybrany poziom trudności
     public Cards CardsScript; // Skrypt kart
     // Ikony trudności
     public Sprite EasyIcon; 

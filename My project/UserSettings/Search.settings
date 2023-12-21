@@ -11,9 +11,9 @@ scopes = {
 	"last_search.110DEAF1" = "p: dir=\"Scenes\" "
 	"OpenInspectorPreview.110DEAF1" = "0"
 	"currentGroup.110DEAF1" = "scene"
-	"last_search.310DEAF1" = "bomb"
+	"last_search.310DEAF1" = "level"
 	"OpenInspectorPreview.310DEAF1" = "0"
-	"currentGroup.310DEAF1" = "menu"
+	"currentGroup.310DEAF1" = "all"
 }
 providers = {
 	packages = {

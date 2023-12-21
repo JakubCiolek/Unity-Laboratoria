@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,6 +12,8 @@ public class EndGame : MonoBehaviour
     public GameObject HUD;
     public GameObject Card1;
     public GameObject NickName;
+
+    public TMP_Text gameoverText;
 
     // The Start method is called before the first frame update
     void Start()
@@ -44,6 +47,26 @@ public class EndGame : MonoBehaviour
         // Get the index of the current scene and reload it
         int currentScene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentScene);
+    }
+
+    public void Win()
+    {
+        EndPanel.SetActive(true);
+        DrawCard.SetActive(false);
+        HUD.SetActive(false);
+        Card1.SetActive(false);
+        NickName.SetActive(false);
+        gameoverText.text = "YOU WON!";
+    }
+
+    public void Defeat()
+    {
+        EndPanel.SetActive(true);
+        DrawCard.SetActive(false);
+        HUD.SetActive(false);
+        Card1.SetActive(false);
+        NickName.SetActive(false);
+        gameoverText.text = "GAME OVER";
     }
 
     // Exits the game
